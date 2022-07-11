@@ -6,13 +6,17 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .image-container {
-    width: 500px;
+    width: 40vw;
     height: 100vh;
     background-image: url(/assets/lucas-calloch-NVVlS68Ngsk-unsplash.jpg);
     background-size: 550px;
@@ -21,7 +25,7 @@
 }
 
 .logo-background {
-    height: 20vh;
+    padding: 20px 0;
     width: 100%;
     background-color: rgba(47,79,79,0.7);
     position: relative;
@@ -40,4 +44,105 @@
 .logo-background span {
     font-family: Bagnard;
     font-size: 60px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #F9FAFB;
+}
+
+label {
+    font-size: 12px;
+}
+
+input {
+    display: block;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 4px;
+    width: 200px;
+}
+
+input:focus-visible {
+    border: 1px solid rgb(132, 132, 226);
+    box-shadow: 3px 3px 5px lightgray;
+    outline: none;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 3px 3px 5px lightgray;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-row div {
+    margin-right: 60px;
+    margin-bottom: 15px;
+}
+
+.form-box,
+.button-container,
+.instructions {
+    padding-left: 40px;
+}
+
+.instructions {
+    padding-top: 100px;
+    padding-right: 400px;
+    padding-bottom: 20px;
+}
+
+.instructions p {
+    padding-bottom: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form-box h2 {
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.button-container {
+    margin-top: 30px;
+}
+
+button[type="submit"] {
+    border: none;
+    background-color: #596D48;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 30px;
+    box-shadow: 3px 3px 5px lightgray;
+    margin-bottom: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #4f6040;
+    cursor: pointer;
+}
+
+button[type="submit"]:active {
+    background-color: #445337;
+}
+
+.login {
+    color: #596D48;
+    font-weight: 600;
 }
