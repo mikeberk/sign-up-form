@@ -1,0 +1,43 @@
+@font-face { font-family: Bagnard; src: url('/assets/Bagnard.otf'); } 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    width: 500px;
+    height: 100vh;
+    background-image: url(/assets/lucas-calloch-NVVlS68Ngsk-unsplash.jpg);
+    background-size: 550px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.logo-background {
+    height: 20vh;
+    width: 100%;
+    background-color: rgba(47,79,79,0.7);
+    position: relative;
+    top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-background img {
+    height: auto;
+    max-width: 135px;
+    position: relative;
+}
+
+.logo-background span {
+    font-family: Bagnard;
+    font-size: 60px;
+}
